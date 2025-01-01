@@ -10,12 +10,25 @@ body {
     /* 高度占满屏幕 */
 }
 
+h1 {
+    text-align: center;
+}
+
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    /* 与表单内容保持间距 */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
 .form-label {
