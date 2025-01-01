@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form autocomplete="off">
+        <!-- First Name Field -->
+        <label class="form-label" for="First Name">First Name</label>
+        <input type="text" id="First Name" name="First Name" title="Enter your First name" placeholder="First Name"
+            required>
+
+        <!-- Last Name Field-->
+        <lable class="form-label" for="Last Name">Last Name</lable>
+        <input type="text" id="Last Name" name="Last Name" title="Enter your Last name" placeholder="Last Name"
+            required></br>
+
+        <!-- Email Field -->
+        <label class="form-label" for="Email">Email</label>
+        <input type="email" id="Email" name="Email" title="Enter your Email" placeholder="Email" required>
+
+        <!-- Password Field -->
+        <label class="form-label" for="Password">Password</label>
+        <input type="password" id="Password" name="Password" title="Enter your Password" placeholder="Password"
+            required>
+
+        <!-- Confirm Password Field -->
+        <label class="form-label" for="Confirm Password">Confirm Password</label>
+        <input type="password" id="Confirm Password" name="Confirm Password" title="Enter your Confirm Password"
+            placeholder="Confirm Password" required> </br>
+
+        <!-- Date of Birth Field -->
+        <label class="form-label" for="Date of Birth">Date of Birth</label>
+        <input type="date" id="Date of Birth" name="Date of Birth" title="Enter your Date of Birth"
+            placeholder="Date of Birth" required>
+
+        <!-- Gender Field -->
+        <label class="form-label" for="Gender">Gender</label>
+        <select id="Gender" name="Gender" title="Select your gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select></br>
+
+        <!-- Choose Your Prefession Field -->
+        <label class="form-label" for="Choose Your Prefession">Choose Your Prefession:</label>
+        <select id="Choose Your Prefession" name="Choose Your Prefession" title="Select your prefession" required>
+            <option value="" disabled selected> Select your prefession</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Other">Other</option>
+
+            <!-- About Me Field -->
+            <label class="form-label" for="About Me"> About me</label>
+            <textarea id="About Me" name="About Me" title="Enter about you" placeholder="About Me"
+                maxlength="250"> </textarea>
+
+
+            <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+
+</html>
