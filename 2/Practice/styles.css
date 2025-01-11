@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* 使子元素水平排列 这个是需要的*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 高度占满屏幕，高度可以写死 */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /* width不要写死*/
+
+    .form-title {
+        text-align: center;
+        margin-bottom: 20px;
+        /* 与表单内容保持间距 */
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-label {
+        all: unset;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 14px;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+
+    input:invalid,
+    select:invalid {
+        border: 2px solid lightcoral;
+    }
+
+    input:valid,
+    select:valid {
+        border: 2px solid lightgreen;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+}
