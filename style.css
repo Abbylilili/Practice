@@ -122,6 +122,7 @@ p {
 button {
     all: unset;
     position: relative;
+    bottom: 10px;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
