@@ -121,7 +121,7 @@ p {
 
 button {
     all: unset;
-    position: relative;
+    position: absolute;
     bottom: 10px;
     font-size: 10px;
     font-weight: bold;
