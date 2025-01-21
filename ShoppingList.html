@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a document about shopping list">
+    <title>Shipping List</title>
+</head>
+<body>
+    <script>
+        // Array
+        let shoppingList = ["eggs","milk","bread"]
+        console.log(shoppingList)
+
+        //shoppingList.push("butter","peach");//push will change the previous array
+        //console.log(shoppingList)
+
+        let newShoppingList = [...shoppingList]
+        newShoppingList.push("butter", "peach");
+        console.log(newShoppingList);
+
+        let newShoppingList2 =[...newShoppingList]
+        newShoppingList2.pop()
+        console.log(newShoppingList2)
+
+
+        //Condition and Loop
+        function checkShoppingCart(newShoppingList3){
+            if (newShoppingList3.length > 5){
+                console.log("your shopping cart is full");
+            }
+    
+            for (let i = 0; i < newShoppingList3.length; i++){
+                console.log(`${i+1}: ${newShoppingList3[i]}`);
+            }
+        }
+
+        let newShoppingList3 = ["eggs","milk","bread","apple","banana","orange"]
+        checkShoppingCart(newShoppingList3);
+
+
+        //function and object
+        function checkItem(itemName){
+            if(newShoppingList4.includes(itemName)){
+                return `${itemName} is in the shopping list!`;
+            } else{
+                return `${itemName} is not in the shopping list!`;
+            }
+        }
+
+        let newShoppingList4 = ["eggs","milk","bread","apple","banana","orange","ice cream"]
+        console.log(checkItem("milk"))
+        console.log(checkItem("cola"))
+
+        const shoppingItem = {
+            name: "milk",       
+            price: 2.5,         
+            quantity: 8  
+        };
+
+        console.log(shoppingItem)
+
+    </Script>
+</body>
+</html>
